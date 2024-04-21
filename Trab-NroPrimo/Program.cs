@@ -5,7 +5,7 @@ string sair;
 int contador;
 sair = "N";
 
-while (sair != "S")
+while (sair != "S" && sair != "s")
 {
     Console.WriteLine("-----------------------------------------------------------");
     Console.WriteLine("Por favor, informe um número para saber se ele é do tipo primo ou não:");
@@ -41,6 +41,10 @@ while (sair != "S")
 
     Console.WriteLine("Digite S para sair do programa ou aperte qualquer tecla para repetir.");
     sair = Console.ReadLine();
+    if (sair != "S" && sair != "s")
+    {
+        Console.Clear();
+    }
 }
 
 Console.ReadKey();
