@@ -30,13 +30,22 @@ while (sair != "S" && sair != "s")
         numeroantes++;
     }
 
-    if (contador == 2)
+    /*if (contador == 2)
     {
         Console.WriteLine("O número " + numero + " é um número primo.");
     }
     else
     {
         Console.WriteLine("O número " + numero + " NÃO é um número primo.");
+    }*/
+    switch (contador)
+    {
+        case 2:
+            Console.WriteLine("O número " + numero + " é um número primo.");
+            break;
+        default:
+            Console.WriteLine("O número " + numero + " NÃO é um número primo.");
+            break;
     }
 
     Console.WriteLine("Digite S para sair do programa ou aperte qualquer tecla para repetir.");
